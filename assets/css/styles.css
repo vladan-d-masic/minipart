@@ -433,31 +433,31 @@ address img:hover {
 }
 
 #tamara-img {
-  background-image: url(./resources/1.o.jpg);
+  background-image: url(/assets/images/1.o.jpg);
 }
 
 #marijana-img {
-  background-image: url(./resources/2.o.jpg);
+  background-image: url(/assets/images/2.o.jpg);
 }
 
 #milovan-img {
-  background-image: url(./resources/3.o.jpg);
+  background-image: url(/assets/images/3.o.jpg);
 }
 
 #milena-img {
-  background-image: url(./resources/4.o.jpg);
+  background-image: url(/assets/images/4.o.jpg);
 }
 
 #dusanka-img {
-  background-image: url(./resources/5.o.jpg);
+  background-image: url(/assets/images/5.o.jpg);
 }
 
 #juha-img {
-  background-image: url(./resources/6.o.jpg);
+  background-image: url(/assets/images/6.o.jpg);
 }
 
 #ana-img {
-  background-image: url(./resources/7.o.jpg);
+  background-image: url(/assets/images/7.o.jpg);
 }
 
 .team-member-info {
