@@ -172,13 +172,13 @@ footer {
 }
 
 #FZN-link {
-  background-image: url(./resources/FZN_sepia_SER.png);
+  background-image: url(/assets/images/FZN_sepia_SER.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #FZN-link:hover {
-  background-image: url(./resources/FZN_boja_SER.png);
+  background-image: url(/assets/images/FZN_boja_SER.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -196,25 +196,25 @@ footer {
 }
 
 #IAUS-link {
-  background-image: url(./resources/IAUS_sepia_SER.png);
+  background-image: url(/assets/images/IAUS_sepia_SER.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #IAUS-link:hover {
-  background-image: url(./resources/IAUS_boja_SER.png);
+  background-image: url(/assets/images/IAUS_boja_SER.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #GF-link {
-  background-image: url(./resources/UBGEF_sepia_SER.png);
+  background-image: url(/assets/images/UBGEF_sepia_SER.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #GF-link:hover {
-  background-image: url(./resources/UBGEF_boja_SER.png);
+  background-image: url(/assets/images/UBGEF_boja_SER.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -232,25 +232,25 @@ footer {
 }
 
 #TFB-link {
-  background-image: url(./resources/TFBor_sepia_SER.png);
+  background-image: url(/assets/images/TFBor_sepia_SER.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #TFB-link:hover {
-  background-image: url(./resources/TFBor_boja_SER.png);
+  background-image: url(/assets/images/TFBor_boja_SER.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #IFDT-link {
-  background-image: url(./resources/IFDT_sepia_SER.png);
+  background-image: url(/assets/images/IFDT_sepia_SER.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #IFDT-link:hover {
-  background-image: url(./resources/IFDT_boja_SER.png);
+  background-image: url(/assets/images/IFDT_boja_SER.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
