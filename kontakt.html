@@ -1,0 +1,82 @@
+---
+layout: default
+header_image: /assets/images/Header background - Contact.webp
+header_title: КОНТАКТ
+---
+
+<main>
+  <div id="contact-main-div">
+    <div id="contact-main-div-address">
+      <div style="display: flex">
+        <div>
+          <img
+            src="/assets/images/location icon.png"
+            alt="Location icon"
+            id="location-icon"
+          />
+        </div>
+        <div style="padding-right: 5%">
+          <p>
+            Контакт адреса:<br />
+            Булевар краља Александра 73/II<br />
+            11000 Београд<br />
+            Србија<br />
+          </p>
+          <br /><br />
+        </div>
+      </div>
+
+      <div style="display: block">
+        <img
+          src="/assets/images/message icon.png"
+          alt="Message icon"
+          id="message-icon"
+        />
+        <a href="mailto:info@minipart.rs">info@minipart.rs</a>
+      </div>
+    </div>
+    <br /><br />
+    <div id="contact-main-div-message">
+      <form action="mailto:info@minipart.rs" method="get">
+        <input
+          type="text"
+          required
+          name="name"
+          placeholder="Име и презиме"
+          id="name"
+        />
+        <input
+          type="email"
+          required
+          name="email"
+          placeholder="Имејл"
+          id="email"
+        /><br />
+        <input
+          type="text"
+          required
+          name="subject"
+          placeholder="Предмет"
+          id="subject"
+        /><br />
+        <textarea
+          name="message"
+          id="message"
+          required
+          placeholder="Порука"
+        ></textarea
+        ><br />
+        <button name="submit-button" type="submit" id="submit-button">
+          Пошаљи
+        </button>
+      </form>
+      <div id="google-map-div">
+        <img
+          src="/assets/images/Google Map.png"
+          alt="Google Map Location"
+          id="google-map-image"
+        />
+      </div>
+    </div>
+  </div>
+</main>
