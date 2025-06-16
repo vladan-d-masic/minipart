@@ -15,7 +15,7 @@ header {
   height: 80vh;
   /*height: 200vh;*/
   opacity: 1;
-  background-image: url(/assets/images/Header\ background.webp);
+  /* background-image: url(/assets/images/Header\ background.webp); */
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
@@ -360,7 +360,7 @@ address img:hover {
   align-items: center;
 }
 
-#about-project-banner {
+/* #about-project-banner {
   background-image: url(./resources/Header\ background\ -\ About\ project.webp);
 }
 
@@ -382,7 +382,7 @@ address img:hover {
 
 #news-banner {
   background-image: url(./resources/Header\ background\ -\ News.webp);
-}
+} */
 
 .rounded-rectangles {
   height: auto;

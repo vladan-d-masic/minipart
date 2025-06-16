@@ -45,12 +45,14 @@
       </ul>
     </nav>
   </div>
+  {% if page.url == "/" %}
   <h1>
-    <span id="yellow-span">МИНИПАРТ</span><br /><span class="h1-span-mobile"
-      >Унапређење учешћа јавности</span
-    ><br /><span class="h1-span-mobile">у просторном планирању</span><br /><span
-      class="h1-span-mobile"
-      >рударских региона</span
-    >
+    <span id="yellow-span">МИНИПАРТ</span><br />
+    <span class="h1-span-mobile">Унапређење учешћа јавности</span><br />
+    <span class="h1-span-mobile">у просторном планирању</span><br />
+    <span class="h1-span-mobile">рударских региона</span>
   </h1>
+  {% else %}
+  <h1>{{ page.header_title }}</h1>
+  {% endif %}
 </header>
