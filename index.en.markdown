@@ -1,5 +1,7 @@
 ---
 layout: default
+lang: en
+permalink: /en
 header_image: /assets/images/Header background.webp
 ---
 
