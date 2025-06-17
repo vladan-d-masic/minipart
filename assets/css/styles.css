@@ -184,13 +184,13 @@ footer {
 }
 
 #FZN-link-english {
-  background-image: url(./resources/FZN_sepia_ENG.png);
+  background-image: url(/assets/images/FZN_sepia_ENG.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #FZN-link-english:hover {
-  background-image: url(./resources/FZN_boja_ENG.png);
+  background-image: url(/assets/images/FZN_boja_ENG.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -220,13 +220,13 @@ footer {
 }
 
 #GF-link-english {
-  background-image: url(./resources/UBGEF_sepia_ENG.png);
+  background-image: url(/assets/images/UBGEF_sepia_ENG.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 #GF-link-english:hover {
-  background-image: url(./resources/UBGEF_boja_ENG.png);
+  background-image: url(/assets/images/UBGEF_boja_ENG.png);
   background-repeat: no-repeat;
   background-size: contain;
 }

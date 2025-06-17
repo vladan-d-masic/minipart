@@ -1,13 +1,21 @@
 <img src="/assets/images/Footer background.jpg" alt="" id="circle-part" />
 <footer>
   <div id="partners">
-    <a href="https://fondzanauku.gov.rs/" id="FZN-link" target="_blank"
-      ><img src="/assets/images/FZN empty.png" alt="Fond za nauku logo"
-    /></a>
+    <a
+      href="https://fondzanauku.gov.rs/"
+      id="{% if page.lang == 'en' %}FZN-link-english{% else %}FZN-link{% endif %}"
+      target="_blank"
+    >
+      <img src="/assets/images/FZN empty.png" alt="Fond za nauku logo" />
+    </a>
+
     <a href="https://iaus.ac.rs/" id="IAUS-link" target="_blank"
       ><img src="/assets/images/IAUS empty.png" alt="IAUS logo"
     /></a>
-    <a href="https://gef.bg.ac.rs/" id="GF-link" target="_blank"
+    <a
+      href="https://gef.bg.ac.rs/"
+      id="{% if page.lang == 'en' %}GF-link-english{% else %}GF-link{% endif %}"
+      target="_blank"
       ><img src="/assets/images/UBGEF empty.png" alt="Geografski fakultet logo"
     /></a>
     <a href="https://www.tfbor.bg.ac.rs/" id="TFB-link" target="_blank"
