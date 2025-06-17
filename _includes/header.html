@@ -128,10 +128,18 @@
   </div>
   {% if page.translation_key == "home" %}
   <h1>
-    <span id="yellow-span">МИНИПАРТ</span><br />
-    <span class="h1-span-mobile">Унапређење учешћа јавности</span><br />
-    <span class="h1-span-mobile">у просторном планирању</span><br />
-    <span class="h1-span-mobile">рударских региона</span>
+    <span id="yellow-span"
+      >{{ site.data.translations[page.lang].homepage_title_1 }}</span
+    ><br />
+    <span class="h1-span-mobile"
+      >{{ site.data.translations[page.lang].homepage_title_2 }}</span
+    ><br />
+    <span class="h1-span-mobile"
+      >{{ site.data.translations[page.lang].homepage_title_3 }}</span
+    ><br />
+    <span class="h1-span-mobile"
+      >{{ site.data.translations[page.lang].homepage_title_4 }}</span
+    >
   </h1>
   {% else %}
   <h1>{{ page.header_title }}</h1>

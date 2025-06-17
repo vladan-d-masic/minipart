@@ -1,4 +1,8 @@
 sr:
+  homepage_title_1: МИНИПАРТ
+  homepage_title_2: Унапређење учешћа јавности
+  homepage_title_3: у просторном планирању
+  homepage_title_4: рударских региона
   about: "О пројекту"
   team: "Тим"
   results: "Резултати"
@@ -6,6 +10,10 @@ sr:
   news: "Вести"
   contact: "Контакт"
 en:
+  homepage_title_1: MINIPART
+  homepage_title_2: Improving participation
+  homepage_title_3: in spatial planning
+  homepage_title_4: of mining areas
   about: "About project"
   team: "Team"
   results: "Results"
