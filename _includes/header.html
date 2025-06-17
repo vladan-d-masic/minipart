@@ -14,6 +14,34 @@
         <div class="bar"></div>
       </div>
       <div class="flags-container">
+        {% for lang in site.languages %} {% assign target = site.pages | where:
+        "translation_key", page.translation_key | where: "lang", lang | first %}
+        {% if target %}
+        <a href="{{ target.url | relative_url }}">
+          <img
+            src="/assets/images/{% if lang == 'en' %}UK flag.png{% else %}Serbian flag.png{% endif %}"
+            alt="{% if lang == 'en' %}English{% else %}Srpski{% endif %}"
+            class="flags{% if lang == page.lang %} active-flag{% endif %}"
+          />
+        </a>
+        {% endif %} {% endfor %}
+      </div>
+
+      <!-- <div class="flags-container">
+        {% for lang in site.languages %}
+        <a
+          href="{{ '/' | prepend: lang | append: page.permalink | replace: '//', '/' | relative_url }}"
+        >
+          <img
+            src="/assets/images/{% if lang == 'en' %}UK flag.png{% else %}Serbian flag.png{% endif %}"
+            alt="{% if lang == 'en' %}English{% else %}Srpski{% endif %}"
+            class="flags{% if lang == site.active_lang %} active-flag{% endif %}"
+          />
+        </a>
+        {% endfor %}
+      </div> -->
+
+      <!-- <div class="flags-container">
         <a href="#"
           ><img
             src="/assets/images/Serbian flag.png"
@@ -23,29 +51,81 @@
         <a href="#"
           ><img src="/assets/images/UK flag.png" alt="Uk zastava" class="flags"
         /></a>
-      </div>
+      </div> -->
     </div>
     <nav class="navigation">
       <ul>
+        <!-- Home icon always links to root -->
         <li>
-          <a href="/index.html"
-            ><img
+          {% assign home = site.pages | where: "translation_key", "home" |
+          where: "lang", page.lang | first %}
+          <a href="{{ home.url | relative_url }}">
+            <img
               src="/assets/images/home icon.png"
               alt="Home icon"
               class="flags"
               id="home-icon"
-          /></a>
+            />
+          </a>
         </li>
-        <li><a href="/o-projektu.html">О пројекту</a></li>
-        <li><a href="/tim.html">Тим</a></li>
-        <li><a href="/rezultati.html">Резултати</a></li>
-        <li><a href="/otvorena-nauka.html">Отворена наука</a></li>
-        <li><a href="/vesti.html">Вести</a></li>
-        <li><a href="/kontakt.html">Контакт</a></li>
+
+        <!-- About -->
+        <li>
+          {% assign about = site.pages | where: "translation_key",
+          "about-project" | where: "lang", page.lang | first %}
+          <a href="{{ about.url | relative_url }}">
+            {{ site.data.translations[page.lang].about }}
+          </a>
+        </li>
+
+        <!-- Team -->
+        <li>
+          {% assign team = site.pages | where: "translation_key", "team" |
+          where: "lang", page.lang | first %}
+          <a href="{{ team.url | relative_url }}">
+            {{ site.data.translations[page.lang].team }}
+          </a>
+        </li>
+
+        <!-- Results -->
+        <li>
+          {% assign results = site.pages | where: "translation_key", "results" |
+          where: "lang", page.lang | first %}
+          <a href="{{ results.url | relative_url }}">
+            {{ site.data.translations[page.lang].results }}
+          </a>
+        </li>
+
+        <!-- Open Science -->
+        <li>
+          {% assign science = site.pages | where: "translation_key",
+          "open-science" | where: "lang", page.lang | first %}
+          <a href="{{ science.url | relative_url }}">
+            {{ site.data.translations[page.lang].open_science }}
+          </a>
+        </li>
+
+        <!-- News -->
+        <li>
+          {% assign news = site.pages | where: "translation_key", "news" |
+          where: "lang", page.lang | first %}
+          <a href="{{ news.url | relative_url }}">
+            {{ site.data.translations[page.lang].news }}
+          </a>
+        </li>
+
+        <!-- Contact -->
+        <li>
+          {% assign contact = site.pages | where: "translation_key", "contact" |
+          where: "lang", page.lang | first %}
+          <a href="{{ contact.url | relative_url }}">
+            {{ site.data.translations[page.lang].contact }}
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
-  {% if page.url == "/" %}
+  {% if page.translation_key == "home" %}
   <h1>
     <span id="yellow-span">МИНИПАРТ</span><br />
     <span class="h1-span-mobile">Унапређење учешћа јавности</span><br />

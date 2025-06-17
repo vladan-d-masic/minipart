@@ -59,11 +59,9 @@ plugins:
 languages: ["sr", "en"]
 default_lang: "sr"
 
-exclude_from_localization:
-  - assets
-  - css
-  - js
-  - images
-  - favicon.ico
+exclude_from_localization: ["assets", "images", "css", "js"]
 
 parallel_localization: true
+
+polyglot:
+  default_lang: sr

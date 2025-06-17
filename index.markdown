@@ -1,6 +1,7 @@
 ---
 layout: default
 lang: sr
+translation_key: home
 permalink: /
 header_image: /assets/images/Header background.webp
 ---
