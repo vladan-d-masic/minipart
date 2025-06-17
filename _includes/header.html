@@ -13,6 +13,7 @@
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
+
       <div class="flags-container">
         {% for lang in site.languages %} {% assign target = site.pages | where:
         "translation_key", page.translation_key | where: "lang", lang | first %}
