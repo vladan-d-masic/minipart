@@ -9,6 +9,15 @@ sr:
   open_science: "Отворена наука"
   news: "Вести"
   contact: "Контакт"
+  footer_notice: Овај сајт је сачињен уз финансијску подршку Фонда за науку Републике Србије.<br />За садржину овог сајта је искључиво одговоран пројекат МИНИПАРТ и та садржина не изражава ставове Фонда за науку Републике Србије
+  footer_contact_label: "Контакт адреса:"
+  footer_address_street: "Булевар краља Александра 73/II"
+  footer_address_city: "11000 Београд, Србија"
+  footer_email: "info@minipart.rs"
+  footer_design: "Дизајн: Љиљана Ђајић"
+  footer_website: "Веб-сајт: Владан Масић"
+  footer_copyright: "Copyright © 2024 МИНИПАРТ"
+
 en:
   homepage_title_1: MINIPART
   homepage_title_2: Improving participation
@@ -20,3 +29,15 @@ en:
   open_science: "Open science"
   news: "News"
   contact: "Contact"
+  footer_notice: >
+    The website is supported by the Science Fund of the Republic of
+        Serbia.<br />
+        MINIPART project bears full responsibility for the content and does not
+        express the views of the Science Fund of the Republic of Serbia
+  footer_contact_label: "Contact address:"
+  footer_address_street: "Bulevar Kralja Aleksandra 73/II"
+  footer_address_city: "11000 Belgrade, Serbia"
+  footer_email: "info@minipart.rs"
+  footer_design: "Design: Ljiljana Đajić"
+  footer_website: "Website: Vladan Masić"
+  footer_copyright: "Copyright © 2024 MINIPART"

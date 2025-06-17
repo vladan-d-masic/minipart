@@ -19,17 +19,13 @@
       ><img src="/assets/images/IFDT empty.png" alt="IFDT logo"
     /></a>
   </div>
-  <p id="footer-text">
-    Овај сајт је сачињен уз финансијску подршку Фонда за науку Републике
-    Србије.<br />За садржину овог сајта је искључиво одговоран пројекат МИНИПАРТ
-    и та садржина не изражава ставове Фонда за науку Републике Србије
-  </p>
+  <p id="footer-text">{{ site.data.translations[page.lang].footer_notice }}</p>
   <div id="contact-div">
     <address id="physical-address">
-      Контакт адреса:<br />
-      Булевар краља Александра 73/II<br />
-      11000 Београд, Србија<br />
-      info@minipart.rs
+      {{ site.data.translations[page.lang].footer_contact_label }}<br />
+      {{ site.data.translations[page.lang].footer_address_street }}<br />
+      {{ site.data.translations[page.lang].footer_address_city }}<br />
+      {{ site.data.translations[page.lang].footer_email }}
     </address>
     <address id="website-info" style="text-align: right">
       <li>
@@ -55,9 +51,9 @@
         /></a>
       </li>
       <br />
-      Дизајн: Љиљана Ђајић<br />
-      Веб-сајт: Владан Масић<br />
-      Copyright © 2024 МИНИПАРТ
+      {{ site.data.translations[page.lang].footer_design }}<br />
+      {{ site.data.translations[page.lang].footer_website }}<br />
+      {{ site.data.translations[page.lang].footer_copyright }}
     </address>
   </div>
   <div id="below-address"></div>
