@@ -56,11 +56,9 @@
     </div>
     <nav class="navigation">
       <ul>
-        <!-- Home icon always links to root -->
+        <!-- Home icon -->
         <li>
-          {% assign home = site.pages | where: "translation_key", "home" |
-          where: "lang", page.lang | first %}
-          <a href="{{ home.url | relative_url }}">
+          <a href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}">
             <img
               src="/assets/images/home icon.png"
               alt="Home icon"
@@ -72,54 +70,54 @@
 
         <!-- About -->
         <li>
-          {% assign about = site.pages | where: "translation_key",
-          "about-project" | where: "lang", page.lang | first %}
-          <a href="{{ about.url | relative_url }}">
+          <a
+            href="{% if page.lang == 'en' %}/about-project.html{% else %}/o-projektu.html{% endif %}"
+          >
             {{ site.data.translations[page.lang].about }}
           </a>
         </li>
 
         <!-- Team -->
         <li>
-          {% assign team = site.pages | where: "translation_key", "team" |
-          where: "lang", page.lang | first %}
-          <a href="{{ team.url | relative_url }}">
+          <a
+            href="{% if page.lang == 'en' %}/team.html{% else %}/tim.html{% endif %}"
+          >
             {{ site.data.translations[page.lang].team }}
           </a>
         </li>
 
         <!-- Results -->
         <li>
-          {% assign results = site.pages | where: "translation_key", "results" |
-          where: "lang", page.lang | first %}
-          <a href="{{ results.url | relative_url }}">
+          <a
+            href="{% if page.lang == 'en' %}/results.html{% else %}/rezultati.html{% endif %}"
+          >
             {{ site.data.translations[page.lang].results }}
           </a>
         </li>
 
         <!-- Open Science -->
         <li>
-          {% assign science = site.pages | where: "translation_key",
-          "open-science" | where: "lang", page.lang | first %}
-          <a href="{{ science.url | relative_url }}">
+          <a
+            href="{% if page.lang == 'en' %}/open-science.html{% else %}/otvorena-nauka.html{% endif %}"
+          >
             {{ site.data.translations[page.lang].open_science }}
           </a>
         </li>
 
         <!-- News -->
         <li>
-          {% assign news = site.pages | where: "translation_key", "news" |
-          where: "lang", page.lang | first %}
-          <a href="{{ news.url | relative_url }}">
+          <a
+            href="{% if page.lang == 'en' %}/news.html{% else %}/vesti.html{% endif %}"
+          >
             {{ site.data.translations[page.lang].news }}
           </a>
         </li>
 
         <!-- Contact -->
         <li>
-          {% assign contact = site.pages | where: "translation_key", "contact" |
-          where: "lang", page.lang | first %}
-          <a href="{{ contact.url | relative_url }}">
+          <a
+            href="{% if page.lang == 'en' %}/contact.html{% else %}/kontakt.html{% endif %}"
+          >
             {{ site.data.translations[page.lang].contact }}
           </a>
         </li>

@@ -4,7 +4,7 @@ description: >-
   A multilingual website dedicated to mining-related projects and open science.
 
 baseurl: "" # no subfolder
-url: "" # set your production URL here if deploying (e.g., https://pomozi.rs)
+url: "" # set your production URL here if deploying
 
 theme: minima
 
