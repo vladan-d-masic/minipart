@@ -13,46 +13,7 @@
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
-
-      <div class="flags-container">
-        {% for lang in site.languages %} {% assign target = site.pages | where:
-        "translation_key", page.translation_key | where: "lang", lang | first %}
-        {% if target %}
-        <a href="{{ target.url | relative_url }}">
-          <img
-            src="/assets/images/{% if lang == 'en' %}UK flag.png{% else %}Serbian flag.png{% endif %}"
-            alt="{% if lang == 'en' %}English{% else %}Srpski{% endif %}"
-            class="flags{% if lang == page.lang %} active-flag{% endif %}"
-          />
-        </a>
-        {% endif %} {% endfor %}
-      </div>
-
-      <!-- <div class="flags-container">
-        {% for lang in site.languages %}
-        <a
-          href="{{ '/' | prepend: lang | append: page.permalink | replace: '//', '/' | relative_url }}"
-        >
-          <img
-            src="/assets/images/{% if lang == 'en' %}UK flag.png{% else %}Serbian flag.png{% endif %}"
-            alt="{% if lang == 'en' %}English{% else %}Srpski{% endif %}"
-            class="flags{% if lang == site.active_lang %} active-flag{% endif %}"
-          />
-        </a>
-        {% endfor %}
-      </div> -->
-
-      <!-- <div class="flags-container">
-        <a href="#"
-          ><img
-            src="/assets/images/Serbian flag.png"
-            alt="Srpska zastava"
-            class="flags"
-        /></a>
-        <a href="#"
-          ><img src="/assets/images/UK flag.png" alt="Uk zastava" class="flags"
-        /></a>
-      </div> -->
+      {% include lang-switcher.html %}
     </div>
     <nav class="navigation">
       <ul>
