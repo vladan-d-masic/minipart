@@ -93,6 +93,10 @@ main {
   flex-wrap: wrap;
 }
 
+.articles-about-participation-main {
+  color: #5a2d51;
+}
+
 .rounded-squares {
   height: 304px;
   width: 258px;
@@ -644,6 +648,21 @@ address img:hover {
 ::placeholder {
   color: #94618e;
   opacity: 0.5;
+}
+
+.search-field {
+  background-image: url(/assets/images/search-menu-background.png);
+  background-repeat: no-repeat;
+  color: white;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: none;
+}
+
+.search-field::placeholder {
+  color: white;
+  opacity: 1;
 }
 
 input,
