@@ -658,6 +658,8 @@ address img:hover {
   padding-bottom: 10px;
   padding-top: 10px;
   border: none;
+  width: 200px;
+  height: 48px;
 }
 
 .search-field::placeholder {
