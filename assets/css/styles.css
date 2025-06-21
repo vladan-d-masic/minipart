@@ -663,6 +663,11 @@ address img:hover {
   border-radius: 23px 0 0 23px;
 }
 
+.search-field:focus {
+  border: none;
+  outline: none;
+}
+
 .search-field::placeholder {
   color: white;
   opacity: 1;
@@ -1043,4 +1048,8 @@ textarea {
 
 .flags:hover {
   opacity: 1;
+}
+
+.article a {
+  color: #94618e;
 }
