@@ -659,7 +659,8 @@ address img:hover {
   padding-top: 10px;
   border: none;
   width: 200px;
-  height: 48px;
+  height: 47px;
+  border-radius: 23px 0 0 23px;
 }
 
 .search-field::placeholder {

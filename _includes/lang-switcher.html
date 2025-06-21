@@ -1,13 +1,20 @@
 <div class="flags-container">
   {% if page.lang == 'sr' %} {% assign lang_url = "" %} {% case page.url %} {%
-  when '/' %}{% assign lang_url = '/en/' %} {% when '/kontakt.html' %}{% assign
-  lang_url = '/en/kontakt.en.html' %} {% when '/o-projektu.html' %}{% assign
-  lang_url = '/en/about-project.html' %} {% when '/tim.html' %}{% assign
-  lang_url = '/en/team.html' %} {% when '/rezultati.html' %}{% assign lang_url =
-  '/en/results.html' %} {% when '/otvorena-nauka.html' %}{% assign lang_url =
-  '/en/open-science.html' %} {% when '/vesti.html' %}{% assign lang_url =
-  '/en/news.html' %} {% when '/kontakt.html' %}{% assign lang_url =
-  '/en/contact.html' %} {% else %}{% assign lang_url = '/en/' %} {% endcase %}
+  when '/' %}{% assign lang_url = '/index.en.html' %} {% when '/kontakt.html'
+  %}{% assign lang_url = '/contact.html' %} {% when '/o-projektu.html' %}{%
+  assign lang_url = '/about-project.html' %} {% when '/tim.html' %}{% assign
+  lang_url = '/team.html' %} {% when '/rezultati.html' %}{% assign lang_url =
+  '/results.html' %} {% when '/otvorena-nauka.html' %}{% assign lang_url =
+  '/open-science.html' %} {% when '/vesti.html' %}{% assign lang_url =
+  '/news.html' %} {% when '/kontakt.html' %}{% assign lang_url = '/contact.html'
+  %} {% when '/rezimei.html' %}{% assign lang_url = '/abstracts.html' %} {% when
+  '/clanci.html' %}{% assign lang_url = '/articles.html' %} {% when
+  '/rudarski-projekti.html' %}{% assign lang_url = '/mining-projects.html' %} {%
+  when '/prezentacije.html' %}{% assign lang_url = '/presentations.html' %} {%
+  when '/rezultati-ankete.html' %}{% assign lang_url = '/survey-results.html' %}
+  {% when '/radovi-o-participaciji.html' %}{% assign lang_url =
+  '/articles-about-participation.html' %} {% else %}{% assign lang_url = '/en/'
+  %} {% endcase %}
 
   <a href="#" class="active-flag">
     <img src="/assets/images/Serbian flag.png" alt="Srpski" class="flags" />
@@ -16,15 +23,23 @@
     <img src="/assets/images/UK flag.png" alt="English" class="flags" />
   </a>
 
-  {% else %} {% assign lang_url = "" %} {% case page.url %} {% when '/en/' %}{%
-  assign lang_url = '/' %} {% when '/en/kontakt.en.html' %}{% assign lang_url =
-  '/kontakt.html' %} {% when '/en/about-project.html' %}{% assign lang_url =
-  '/o-projektu.html' %} {% when '/en/team.html' %}{% assign lang_url =
-  '/tim.html' %} {% when '/en/results.html' %}{% assign lang_url =
-  '/rezultati.html' %} {% when '/en/open-science.html' %}{% assign lang_url =
-  '/otvorena-nauka.html' %} {% when '/en/news.html' %}{% assign lang_url =
-  '/vesti.html' %} {% when '/en/contact.html' %}{% assign lang_url =
-  '/kontakt.html' %} {% else %}{% assign lang_url = '/' %} {% endcase %}
+  {% else %} {% assign lang_url = "" %} {% case page.url %} {% when
+  '/index.en.html' %}{% assign lang_url = '/index.html' %} {% when
+  '/contact.html' %}{% assign lang_url = '/kontakt.html' %} {% when
+  '/about-project.html' %}{% assign lang_url = '/o-projektu.html' %} {% when
+  '/team.html' %}{% assign lang_url = '/tim.html' %} {% when '/results.html'
+  %}{% assign lang_url = '/rezultati.html' %} {% when '/open-science.html' %}{%
+  assign lang_url = '/otvorena-nauka.html' %} {% when '/news.html' %}{% assign
+  lang_url = '/vesti.html' %} {% when '/contact.html' %}{% assign lang_url =
+  '/kontakt.html' %} {% when '/abstracts.html' %}{% assign lang_url =
+  '/rezimei.html' %} {% when '/articles.html' %}{% assign lang_url =
+  '/clanci.html' %} {% when '/mining-projects.html' %}{% assign lang_url =
+  '/rudarski-projekti.html' %} {% when '/presentations.html' %}{% assign
+  lang_url = '/prezentacije.html' %} {% when '/survey-results.html' %}{% assign
+  lang_url = '/rezultati-ankete.html' %} {% when
+  '/articles-about-participation.html' %}{% assign lang_url =
+  '/radovi-o-participaciji.html' %} {% else %}{% assign lang_url = '/' %} {%
+  endcase %}
 
   <a href="{{ lang_url }}">
     <img src="/assets/images/Serbian flag.png" alt="Srpski" class="flags" />
