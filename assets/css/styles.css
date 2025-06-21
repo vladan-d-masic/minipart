@@ -660,7 +660,6 @@ address img:hover {
   border: none;
   width: 200px;
   height: 47px;
-  border-radius: 23px 0 0 23px;
 }
 
 .search-field:focus {
