@@ -95,6 +95,8 @@ main {
 
 .articles-about-participation-main {
   color: #5a2d51;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .rounded-squares {
@@ -653,13 +655,14 @@ address img:hover {
 .search-field {
   background-image: url(/assets/images/search-menu-background.png);
   background-repeat: no-repeat;
+  background-size: contain;
   color: white;
-  padding-left: 30px;
   padding-bottom: 10px;
   padding-top: 10px;
   border: none;
-  width: 200px;
-  height: 47px;
+  width: 130px;
+  height: 30px;
+  font-size: small;
 }
 
 .search-field:focus {
@@ -1051,4 +1054,9 @@ textarea {
 
 .article a {
   color: #94618e;
+}
+
+.search-criteria {
+  margin-left: -12px;
+  /* margin-right: -100px; */
 }
