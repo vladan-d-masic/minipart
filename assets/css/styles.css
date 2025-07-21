@@ -839,6 +839,28 @@ textarea {
   margin-bottom: 5%;
 }
 
+#news-MAXQDA-photo1 {
+  width: 40%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+#news-MAXQDA-photo2 {
+  width: 40%;
+  margin-bottom: 5%;
+}
+
+#news-MAXQDA-photo3 {
+  width: 40%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+#news-MAXQDA-photo4 {
+  width: 40%;
+  margin-bottom: 5%;
+}
+
 #main-about-project {
   display: flex;
   flex-direction: column;
