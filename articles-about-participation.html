@@ -25,58 +25,684 @@ header_title: OPEN SCIENCE
     >
       <div class="d-flex gap-5 align-items-center">
         <div class="country-select d-flex align-items-center gap-2">
-          <svg
-            width="25px"
-            height="100px"
-            viewBox="0 0 12.00 12.00"
-            enable-background="new 0 0 12 12"
-            id="Слой_1"
-            version="1.1"
-            xml:space="preserve"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            fill="#5a2d51"
-            stroke="#5a2d51"
-            stroke-width="0.6"
-            transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke="#CCCCCC"
-              stroke-width="0.024"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <g>
-                <rect
-                  fill="#5a2d51"
-                  height="1"
-                  width="11"
-                  x="0.5"
-                  y="5.5"
-                ></rect>
-                <rect
-                  fill="#5a2d51"
-                  height="1"
-                  width="11"
-                  x="0.5"
-                  y="2.5"
-                ></rect>
-                <rect
-                  fill="#5a2d51"
-                  height="1"
-                  width="11"
-                  x="0.5"
-                  y="8.5"
-                ></rect>
-              </g>
-            </g>
-          </svg>
-          <!-- <img src="/assets/images/burger-menu-icon.png" alt="" height="25px" /> -->
-          <span class="fw-bold">Country</span>
+          <div class="dropdown">
+            <button
+              class="btn btn-light dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              height="20px"
+            >
+              <svg
+                width="25px"
+                height="25px"
+                viewBox="0 0 12.00 12.00"
+                enable-background="new 0 0 12 12"
+                id="Слой_1"
+                version="1.1"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="#5a2d51"
+                stroke="#5a2d51"
+                stroke-width="0.6"
+                transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="#CCCCCC"
+                  stroke-width="0.024"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <rect
+                      fill="#5a2d51"
+                      height="1"
+                      width="11"
+                      x="0.5"
+                      y="5.5"
+                    ></rect>
+                    <rect
+                      fill="#5a2d51"
+                      height="1"
+                      width="11"
+                      x="0.5"
+                      y="2.5"
+                    ></rect>
+                    <rect
+                      fill="#5a2d51"
+                      height="1"
+                      width="11"
+                      x="0.5"
+                      y="8.5"
+                    ></rect>
+                  </g>
+                </g>
+              </svg>
+              <span class="fw-bold" style="color: #5a2d51">Country</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropend dropdown-submenu">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Africa
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Algeria</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Angola</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Benin</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Botswana</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Burkina Faso
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Cameroon</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Central African Republic
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Djibouti</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Egypt</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Ethiopia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Ghana</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Guinea</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Ivory Coast
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Kenya</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Lesotho</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Libya</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Madagascar</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Malawi</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Mali</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Mauritania</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Morocco</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Mozambique</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Namibia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Niger</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Nigeria</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Senegal</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Somalia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >South Africa
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Sudan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Swaziland</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Tanzania</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Tunisia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Uganda</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Zambia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Zimbabwe</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropend dropdown-submenu">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Asia
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Afghanistan</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Armenia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Azerbaijan</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Bahrain</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Bangladesh</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Cambodia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">China</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">India</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Indonesia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Iran</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Iraq</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Israel</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Japan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Jordan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Kazakhstan</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Kuwait</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Kyrgyzstan</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Lebanon</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Malaysia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Mongolia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Myanmar</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Nepal</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Oman</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Pakistan</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Palestine</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Philippines</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Turkey</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Qatar</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Saudi Arabia
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Singapore</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >South Korea
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Sri Lanka
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Syria</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Thailand</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Turkmenistan</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >United Arab Emirates</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Uzbekistan</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Vietnam</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Yemen</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropend dropdown-submenu">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Australia and Oceania
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Australia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >New Zealand</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Papua New Guinea</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropend dropdown-submenu">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Europe
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Albania</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Austria</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Belarus</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Belgium</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Bosnia and Herzegovina</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Bulgaria</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Croatia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Cyprus</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Czech Republic</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Denmark</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Estonia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Finland</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">France</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Germany</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Greece</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Hungary</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Iceland</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Ireland</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Italy</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Latvia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Liechtenstein</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Lithuania</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Luxembourg</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Malta</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Moldova</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Montenegro</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Netherlands</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >North Macedonia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Norway</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Poland</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Portugal</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Romania</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Russia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Serbia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Slovakia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Slovenia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Spain</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Sweden</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Switzerland</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Ukraine</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >United Kingdom</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropend dropdown-submenu">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  North America
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Canada</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Cuba</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Dominican Republic</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Guatemala</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Mexico</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Nicaragua</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Panama</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">USA</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropend dropdown-submenu">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  South America
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Argentina</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Bolivia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Brazil</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Chile</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Colombia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Ecuador</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Martinique</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Peru</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item country-filter" href="#">Uruguay</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropend dropdown-submenu">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Universal
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item country-filter" href="#"
+                      >Universal</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
+
         <div class="method-select d-flex align-items-center gap-2">
           <img
             src="/assets/images/drop-down-menu-icon.png"
@@ -3480,35 +4106,70 @@ header_title: OPEN SCIENCE
     });
   });
 </script>
+<script>
+  document
+    .querySelectorAll(".dropdown-submenu > a")
+    .forEach(function (element) {
+      element.addEventListener("click", function (e) {
+        // Prevent the menu from closing when clicking a submenu toggle
+        e.stopPropagation();
+        e.preventDefault();
 
-<!-- <svg
-  width="30px"
-  height="100px"
-  viewBox="0 0 12.00 12.00"
-  enable-background="new 0 0 12 12"
-  id="Слой_1"
-  version="1.1"
-  xml:space="preserve"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  fill="#5a2d51"
-  stroke="#5a2d51"
-  stroke-width="0.6"
-  transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
->
-  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-  <g
-    id="SVGRepo_tracerCarrier"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    stroke="#CCCCCC"
-    stroke-width="0.024"
-  ></g>
-  <g id="SVGRepo_iconCarrier">
-    <g>
-      <rect fill="#5a2d51" height="1" width="11" x="0.5" y="5.5"></rect>
-      <rect fill="#5a2d51" height="1" width="11" x="0.5" y="2.5"></rect>
-      <rect fill="#5a2d51" height="1" width="11" x="0.5" y="8.5"></rect>
-    </g>
-  </g>
-</svg> -->
+        let submenu = this.nextElementSibling;
+
+        // Close other open submenus
+        document
+          .querySelectorAll(".dropdown-submenu .dropdown-menu")
+          .forEach(function (el) {
+            if (el !== submenu) {
+              el.classList.remove("show");
+            }
+          });
+
+        // Toggle current submenu
+        submenu.classList.toggle("show");
+      });
+    });
+
+  // Optional: Close submenu when clicking outside the dropdown
+  document.addEventListener("click", function (e) {
+    document
+      .querySelectorAll(".dropdown-submenu .dropdown-menu")
+      .forEach(function (el) {
+        el.classList.remove("show");
+      });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("article-search");
+    const articles = document.querySelectorAll(".article");
+
+    // Live search functionality
+    function filterArticles(query) {
+      articles.forEach(function (article) {
+        const text = article.textContent.toLowerCase();
+        if (text.includes(query)) {
+          article.style.display = "block";
+        } else {
+          article.style.display = "none";
+        }
+      });
+    }
+
+    searchInput.addEventListener("input", function () {
+      const query = this.value.toLowerCase();
+      filterArticles(query);
+    });
+
+    // Country filter clicks
+    document.querySelectorAll(".country-filter").forEach(function (item) {
+      item.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent link jump
+        const country = this.textContent.trim().toLowerCase();
+        searchInput.value = country; // Optional: update search input
+        filterArticles(country);
+      });
+    });
+  });
+</script>
