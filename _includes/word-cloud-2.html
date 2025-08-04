@@ -1,0 +1,87 @@
+<style type="text/css">
+  #htmltagcloud {
+    font-size: 100%;
+    background-color: #fff;
+  }
+</style>
+
+<div id="htmltagcloud">
+  <canvas width="420" height="300"></canvas>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.2/wordcloud2.min.js"></script>
+<script>
+  const keywords = [
+    ["planning", 19],
+    ["participatory", 18],
+    ["participation", 17],
+    ["mining", 16],
+    ["spatial", 15],
+    ["urban", 14],
+    ["development", 13],
+    ["approach", 12],
+    ["local", 11],
+    ["public", 11],
+    ["case", 10],
+    ["community", 10],
+    ["social", 10],
+    ["design", 9],
+    ["study", 9],
+    ["environmental", 8],
+    ["method", 7],
+    ["sustainable", 7],
+    ["tool", 6],
+    ["management", 5],
+    ["framework", 4],
+    ["guide", 4],
+    ["practice", 4],
+    ["process", 4],
+    ["regional", 4],
+    ["research", 4],
+    ["role", 4],
+  ];
+
+  WordCloud(document.querySelector("#htmltagcloud canvas"), {
+    list: keywords,
+    gridSize: 12,
+    weightFactor: 3,
+    drawOutOfBound: false,
+    shrinkToFit: true,
+    rotateRatio: 0.3,
+    rotationSteps: 2,
+    backgroundColor: "#fff",
+    color: "random-dark",
+    click: function (item) {
+      if (!item) return;
+      const keyword = item[0].toLowerCase();
+
+      // For each article...
+      document.querySelectorAll(".article").forEach((article) => {
+        // Check only spans with class 'fw-bold' inside that article
+        const boldSpans = article.querySelectorAll("span.fw-bold");
+        let matchFound = false;
+
+        boldSpans.forEach((span) => {
+          if (span.textContent.toLowerCase().includes(keyword)) {
+            matchFound = true;
+          }
+        });
+
+        // Show/hide based on match
+        article.style.display = matchFound ? "block" : "none";
+      });
+    },
+    hover: function (item, dimension, event) {
+      // Optional: Show the word being hovered in console
+      if (item) {
+        event.target.style.cursor = "pointer";
+      }
+    },
+  });
+
+  // Optional reset button
+  document.getElementById("resetFilter")?.addEventListener("click", () => {
+    document.querySelectorAll(".article").forEach((article) => {
+      article.style.display = "block";
+    });
+  });
+</script>

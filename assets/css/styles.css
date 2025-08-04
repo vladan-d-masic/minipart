@@ -97,6 +97,9 @@ main {
   color: #5a2d51;
   display: flex;
   justify-content: space-evenly;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  gap: 0 !important;
 }
 
 .rounded-squares {
