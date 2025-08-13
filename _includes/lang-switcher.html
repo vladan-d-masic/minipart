@@ -13,8 +13,9 @@
   when '/prezentacije.html' %}{% assign lang_url = '/presentations.html' %} {%
   when '/rezultati-ankete.html' %}{% assign lang_url = '/survey-results.html' %}
   {% when '/radovi-o-participaciji.html' %}{% assign lang_url =
-  '/articles-about-participation.html' %} {% else %}{% assign lang_url = '/en/'
-  %} {% endcase %}
+  '/articles-about-participation.html' %} {% when '/formalne-metode.html' %}{%
+  assign lang_url = '/formal-methods.html' %} {% else %}{% assign lang_url =
+  '/en/' %} {% endcase %}
 
   <a href="#" class="active-flag">
     <img src="/assets/images/Serbian flag.png" alt="Srpski" class="flags" />
@@ -38,7 +39,8 @@
   lang_url = '/prezentacije.html' %} {% when '/survey-results.html' %}{% assign
   lang_url = '/rezultati-ankete.html' %} {% when
   '/articles-about-participation.html' %}{% assign lang_url =
-  '/radovi-o-participaciji.html' %} {% else %}{% assign lang_url = '/' %} {%
+  '/radovi-o-participaciji.html' %} {% when '/formal-methods.html' %}{% assign
+  lang_url = '/formalne-metode.html' %} {% else %}{% assign lang_url = '/' %} {%
   endcase %}
 
   <a href="{{ lang_url }}">

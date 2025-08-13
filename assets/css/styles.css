@@ -1099,3 +1099,8 @@ textarea {
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
+.formal-methods-table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
